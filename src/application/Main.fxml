@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.141" fx:controller="application.MainController">
+   <children>
+      <RadioButton fx:id="rbMale" layoutX="107.0" layoutY="81.0" mnemonicParsing="false" text="Male">
+         <toggleGroup>
+            <ToggleGroup fx:id="Gender" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rbFemale" layoutX="107.0" layoutY="120.0" mnemonicParsing="false" text="Female" toggleGroup="$Gender" />
+      <RadioButton fx:id="rbNotToSay" layoutX="107.0" layoutY="158.0" mnemonicParsing="false" text="Not to say" toggleGroup="$Gender" />
+      <Label layoutY="217.0" prefHeight="52.0" prefWidth="300.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="19.0" prefHeight="52.0" prefWidth="300.0" text="Select your gender" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
